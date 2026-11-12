@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>MindMate AI — Your Mind Matters. We're Here to Listen.</title>
+  <meta name="description"
+    content="MindMate AI is an everyday wellness companion: supportive chat, breathing exercises, mood tracking and mindfulness.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://unpkg.com/lucide@0.469.0/dist/umd/lucide.min.js" defer></script>
+</head>
+
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <div class="boot" id="boot" role="status">Loading MindMate…</div>
+
+  <!-- ============ LANDING ============ -->
+  <div class="view" id="v-landing">
+    <header class="nav">
+      <a class="logo" href="#/"><span class="logo-mark"><i data-lucide="brain-circuit"></i></span>MindMate AI</a>
+      <nav class="nav-links" aria-label="Main">
+        <a href="#/" data-scroll="features">Features</a>
+        <a href="#/" data-scroll="how">How it works</a>
+        <a href="#/" data-scroll="stories">Stories</a>
+      </nav>
+      <div class="nav-cta"><a class="btn ghost sm" href="#/auth?mode=login" data-guest-hide>Log in</a><a class="btn sm"
+          href="#/auth?mode=signup">Get started</a></div>
+    </header>
+
+    <main id="main">
+      <section class="hero">
+        <div class="hero-copy">
+          <span class="pill"><i data-lucide="heart-handshake"></i> Everyday wellness support</span>
+          <h1>Your Mind Matters.<br><em>We're Here to Listen.</em></h1>
+          <p>MindMate AI is a calm companion for stress, worry and the hard days. Talk it through, breathe, track your
+            mood, and leave with one small next step.</p>
+          <div class="hero-btns">
+            <a class="btn" href="#/auth?mode=signup">Start Your Journey <i data-lucide="arrow-right"></i></a>
+            <a class="btn ghost" href="#/" data-scroll="features">Explore Features</a>
+          </div>
+          <p class="fine">Not a therapist or emergency service. It never diagnoses or recommends medication.</p>
+        </div>
+        <div class="hero-art" aria-hidden="true">
+          <svg viewBox="0 0 420 420" role="img">
+            <defs>
+              <linearGradient id="g1" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0" stop-color="#C4B5FD" />
+                <stop offset="1" stop-color="#93C5FD" />
+              </linearGradient>
+              <linearGradient id="g2" x1="0" y1="1" x2="1" y2="0">
+                <stop offset="0" stop-color="#8B5CF6" />
+                <stop offset="1" stop-color="#A5B4FC" />
+              </linearGradient>
+            </defs>
+            <circle cx="210" cy="210" r="190" fill="url(#g1)" opacity=".28" />
+            <circle cx="210" cy="210" r="140" fill="url(#g1)" opacity=".45">
+              <animate attributeName="r" values="140;154;140" dur="6s" repeatCount="indefinite" />
+            </circle>
+            <circle cx="210" cy="210" r="92" fill="url(#g2)">
+              <animate attributeName="r" values="92;104;92" dur="6s" repeatCount="indefinite" />
+            </circle>
+            <path
+              d="M210 262c-34-22-52-44-52-70 0-18 13-32 30-32 10 0 18 5 22 12 4-7 12-12 22-12 17 0 30 14 30 32 0 26-18 48-52 70z"
+              fill="#fff" opacity=".92" />
+            <g fill="#fff" opacity=".75">
+              <circle cx="78" cy="120" r="7" />
+              <circle cx="346" cy="96" r="5" />
+              <circle cx="352" cy="300" r="9" />
+              <circle cx="64" cy="290" r="5" />
+            </g>
+            <path d="M96 352c40-26 78-30 114-12s72 14 116-10" stroke="#8B5CF6" stroke-width="3" fill="none"
+              stroke-linecap="round" opacity=".5" />
+          </svg>
+        </div>
+      </section>
+
+      <section class="sec" id="features">
+        <h2>Everything for a calmer day</h2>
+        <p class="sec-sub">Tools that work together, so you can check in, ease off and see your progress.</p>
+        <div class="cards">
+          <article class="card feat"><span class="ico"><i data-lucide="message-circle-heart"></i></span>
+            <h3>AI wellness chat</h3>
+            <p>Describe what's on your mind. Get empathetic replies, practical ideas and mindfulness techniques.</p>
+          </article>
+          <article class="card feat"><span class="ico"><i data-lucide="wind"></i></span>
+            <h3>Guided breathing</h3>
+            <p>4-7-8, box and deep breathing with an animated circle, timer and pause control.</p>
+          </article>
+          <article class="card feat"><span class="ico"><i data-lucide="smile-plus"></i></span>
+            <h3>Mood tracker</h3>
+            <p>Log how you feel, add a note, and see your week at a glance.</p>
+          </article>
+          <article class="card feat"><span class="ico"><i data-lucide="sprout"></i></span>
+            <h3>Daily mindfulness</h3>
+            <p>A fresh quote, tip, gratitude journal, short meditation and self-care ideas each day.</p>
+          </article>
+          <article class="card feat"><span class="ico"><i data-lucide="layout-dashboard"></i></span>
+            <h3>Personal dashboard</h3>
+            <p>Your mood today, quick actions and recent activity in one calm place.</p>
+          </article>
+          <article class="card feat"><span class="ico"><i data-lucide="shield-check"></i></span>
+            <h3>Safety first</h3>
+            <p>Crisis language is routed to real helplines. Helpline info is always visible in chat.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="sec alt" id="how">
+        <h2>How it works</h2>
+        <ol class="steps">
+          <li><b>1</b>
+            <h3>Check in</h3>
+            <p>Tell us your age group, what describes you and what's on your mind.</p>
+          </li>
+          <li><b>2</b>
+            <h3>Talk or breathe</h3>
+            <p>Chat with MindMate or take a guided breathing break.</p>
+          </li>
+          <li><b>3</b>
+            <h3>Take one small step</h3>
+            <p>Get realistic, user-owned actions instead of generic advice.</p>
+          </li>
+          <li><b>4</b>
+            <h3>See your patterns</h3>
+            <p>Track mood over time and know when to reach out to a real person.</p>
+          </li>
+        </ol>
+      </section>
+
+      <section class="sec" id="stories">
+        <h2>What people might say</h2>
+        <p class="sec-sub"><span class="tag">Sample content</span> These are illustrative examples, not real user
+          reviews.</p>
+        <div class="cards three">
+          <figure class="card quote">
+            <blockquote>“The breathing circle got me through a panic-y evening before my exam.”</blockquote>
+            <figcaption>Sample student</figcaption>
+          </figure>
+          <figure class="card quote">
+            <blockquote>“Turning a messy worry into three tiny tasks made job hunting feel doable.”</blockquote>
+            <figcaption>Sample job seeker</figcaption>
+          </figure>
+          <figure class="card quote">
+            <blockquote>“Seeing my week of moods made me realise Thursdays are my hardest day.”</blockquote>
+            <figcaption>Sample professional</figcaption>
+          </figure>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div><a class="logo" href="#/"><span class="logo-mark"><i data-lucide="brain-circuit"></i></span>MindMate AI</a>
+        <p class="fine">Your Mind Matters. We're Here to Listen.</p>
+      </div>
+      <nav aria-label="Footer"><b>Explore</b><a href="#/" data-scroll="features">Features</a><a href="#/"
+          data-scroll="how">How it works</a><a href="#/auth?mode=signup">Get started</a></nav>
+      <nav aria-label="Support"><b>Contact &amp; privacy</b><a href="mailto:hello@mindmate.com">hello@mindmate.com</a><a
+          href="#/privacy">Privacy</a><a href="https://findahelpline.com" target="_blank" rel="noopener">Find a
+          helpline</a></nav>
+      <p class="fine foot-note">MindMate AI offers wellness support, not medical advice, diagnosis or treatment. In an
+        emergency call your local emergency number 112.</p>
+    </footer>
+  </div>
+
+  <!-- ============ PRIVACY ============ -->
+  <div class="view" id="v-privacy">
+    <header class="nav"><a class="logo" href="#/"><span class="logo-mark"><i
+            data-lucide="brain-circuit"></i></span>MindMate AI</a><a class="btn ghost sm" href="#/">Back</a></header>
+    <main class="doc card">
+      <h2>Privacy</h2>
+      <p>This is a prototype. Your account is handled by Supabase Authentication and your mood and journal entries are
+        stored in a database tied to your account. Chat messages are sent to our server and to the Groq API to generate
+        replies.</p>
+      <p>Do not share information you would not want processed by these services. We cannot promise confidentiality
+        beyond what this implementation does. A full policy will be added before any public launch.</p>
+    </main>
+  </div>
+
+  <!-- ============ AUTH ============ -->
+  <div class="view" id="v-auth">
+    <main class="auth card">
+      <a class="logo" href="#/"><span class="logo-mark"><i data-lucide="brain-circuit"></i></span>MindMate AI</a>
+      <h2 id="authTitle">Welcome back</h2>
+      <p class="sub" id="authSub">Log in to continue your journey.</p>
+      <form id="authForm" novalidate>
+        <div id="nameWrap" hidden><label for="aName">What should we call you?</label><input id="aName" type="text"
+            autocomplete="nickname" maxlength="40"></div>
+        <label for="aEmail">Email</label><input id="aEmail" type="email" autocomplete="email" required>
+        <label for="aPw">Password</label><input id="aPw" type="password" autocomplete="current-password" minlength="8"
+          required>
+        <p class="err" id="authErr" role="alert"></p>
+        <p class="note" id="authNote" role="status"></p>
+        <button class="btn block" id="authBtn" type="submit">Log in</button>
+      </form>
+      <button class="link" id="authToggle" type="button">New here? Create an account</button>
+      <p class="fine">Everyday wellness support only. Not a therapist, not an emergency service.</p>
+    </main>
+  </div>
+
+  <!-- ============ ONBOARDING ============ -->
+  <div class="view" id="v-onboard">
+    <main class="auth card wide">
+      <h2>A little about you</h2>
+      <p class="sub">So suggestions fit your life. You can change this later.</p>
+      <fieldset>
+        <legend>Your age group</legend>
+        <div class="opts" id="obAge"></div>
+      </fieldset>
+      <fieldset>
+        <legend>What best describes you?</legend>
+        <div class="opts" id="obRole"></div>
+      </fieldset>
+      <fieldset id="obConcernSet" hidden>
+        <legend>What's on your mind? <small>(pick any)</small></legend>
+        <div class="opts" id="obConcern"></div>
+      </fieldset>
+      <p class="err" id="obErr" role="alert"></p>
+      <button class="btn block" id="obGo" type="button">Continue to my dashboard</button>
+    </main>
+  </div>
+
+  <!-- ============ APP SHELL ============ -->
+  <div class="view" id="v-app">
+    <aside class="side" aria-label="App navigation">
+      <a class="logo" href="#/app/dashboard"><span class="logo-mark"><i data-lucide="brain-circuit"></i></span>MindMate
+        AI</a>
+      <nav id="appNav">
+        <a href="#/app/dashboard" data-page="dashboard"><i data-lucide="layout-dashboard"></i><span>Dashboard</span></a>
+        <a href="#/app/chat" data-page="chat"><i data-lucide="message-circle-heart"></i><span>Chat</span></a>
+        <a href="#/app/breathe" data-page="breathe"><i data-lucide="wind"></i><span>Breathe</span></a>
+        <a href="#/app/mood" data-page="mood"><i data-lucide="smile-plus"></i><span>Mood</span></a>
+        <a href="#/app/wellness" data-page="wellness"><i data-lucide="sprout"></i><span>Wellness</span></a>
+      </nav>
+      <button class="link out" id="logoutBtn" type="button" data-logout><i data-lucide="log-out"></i> Log out</button>
+    </aside>
+
+    <div class="main-col">
+      <!-- Dashboard -->
+      <section class="page" id="p-dashboard" aria-labelledby="dashH">
+        <h2 id="dashH">Welcome</h2>
+        <p class="sub" id="dashSub">Here's your day at a glance.</p>
+        <div class="dash">
+          <div class="card">
+            <h3><i data-lucide="smile"></i> Today's mood</h3>
+            <div id="dashMood"></div>
+          </div>
+          <div class="card">
+            <h3><i data-lucide="zap"></i> Quick access</h3>
+            <div class="quick">
+              <a class="btn sm" href="#/app/chat"><i data-lucide="message-circle-heart"></i> AI Chat</a>
+              <a class="btn sm" href="#/app/breathe"><i data-lucide="wind"></i> Breathe</a>
+              <a class="btn sm" href="#/app/mood"><i data-lucide="smile-plus"></i> Log mood</a>
+            </div>
+          </div>
+          <div class="card">
+            <h3><i data-lucide="lightbulb"></i> Daily wellness tip</h3>
+            <p id="dashTip"></p>
+          </div>
+          <div class="card">
+            <h3><i data-lucide="bar-chart-3"></i> Weekly mood summary</h3>
+            <div id="dashWeek"></div>
+          </div>
+          <div class="card span2">
+            <h3><i data-lucide="history"></i> Recent activity</h3>
+            <ul class="list" id="dashActivity"></ul>
+            <p class="fine">Activity is kept on this device only.</p>
+          </div>
+          <div class="card span2">
+            <h3><i data-lucide="shield-check"></i> Your account &amp; data</h3>
+            <p><button class="btn ghost sm" id="logoutBtn2" type="button" data-logout><i data-lucide="log-out"></i> Log
+                out</button></p>
+            <p class="fine">Delete your saved mood entries, journal entries and profile from our database. Your login
+              stays so you can start fresh.</p><button class="btn ghost sm" id="deleteData" type="button"><i
+                data-lucide="trash-2"></i> Delete my saved data</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Chat -->
+      <section class="page" id="p-chat" aria-labelledby="chatH">
+        <div class="page-head">
+          <div>
+            <h2 id="chatH">Chat with MindMate</h2>
+            <p class="sub">Share what's on your mind. This conversation lasts for this session.</p>
+          </div>
+          <button class="btn ghost sm" id="chatClear" type="button"><i data-lucide="trash-2"></i> Clear chat</button>
+        </div>
+        <div class="card chat">
+          <div class="log" id="chatLog" role="log" aria-live="polite"></div>
+          <div class="chips" id="chatChips"></div>
+          <form class="composer" id="chatForm">
+            <label class="sr" for="chatInput">Message</label>
+            <textarea id="chatInput" rows="1" maxlength="2000" placeholder="How are you feeling?"></textarea>
+            <button class="btn" id="chatSend" type="submit" aria-label="Send message"><i
+                data-lucide="send"></i></button>
+          </form>
+          <p class="help"><i data-lucide="phone-call"></i> In crisis? Call/text <b>988</b> (US) or <b>Tele-MANAS
+              14416</b> (India), or visit <a href="https://findahelpline.com" target="_blank"
+              rel="noopener">findahelpline.com</a>. MindMate is not a therapist.</p>
+        </div>
+      </section>
+
+      <!-- Breathing -->
+      <section class="page" id="p-breathe" aria-labelledby="breH">
+        <h2 id="breH">Breathing exercises</h2>
+        <p class="sub">Pick a technique and follow the circle.</p>
+        <div class="card breathe">
+          <div class="seg" id="bTech" role="group" aria-label="Technique"></div>
+          <p class="sub center" id="bDesc"></p>
+          <div class="b-stage">
+            <div class="b-circle" id="bCircle"><span id="bLabel">Ready</span><b id="bCount"></b></div>
+          </div>
+          <div class="b-meta"><label for="bDur">Session</label>
+            <select id="bDur">
+              <option value="1">1 minute</option>
+              <option value="3" selected>3 minutes</option>
+              <option value="5">5 minutes</option>
+            </select>
+            <span class="timer" id="bTimer" aria-live="off">03:00</span>
+          </div>
+          <div class="b-btns"><button class="btn" id="bStart" type="button"><i data-lucide="play"></i> Start</button>
+            <button class="btn ghost" id="bPause" type="button" disabled><i data-lucide="pause"></i> Pause</button>
+            <button class="btn ghost" id="bReset" type="button"><i data-lucide="rotate-ccw"></i> Reset</button>
+          </div>
+          <p class="done" id="bMsg" role="status"></p>
+        </div>
+      </section>
+
+      <!-- Mood -->
+      <section class="page" id="p-mood" aria-labelledby="mooH">
+        <h2 id="mooH">Mood tracker</h2>
+        <p class="sub">How are you feeling right now?</p>
+        <div class="two">
+          <div class="card">
+            <div class="moods" id="moodPick" role="group" aria-label="Mood"></div>
+            <label for="moodNote">Journal note <small>(optional)</small></label>
+            <textarea id="moodNote" rows="3" maxlength="1000" placeholder="What's behind this feeling?"></textarea>
+            <p class="err" id="moodErr" role="alert"></p>
+            <button class="btn block" id="moodSave" type="button">Save entry</button>
+          </div>
+          <div class="card">
+            <h3><i data-lucide="bar-chart-3"></i> This week</h3>
+            <div id="moodWeek"></div>
+            <ul class="insights" id="moodInsights"></ul>
+          </div>
+        </div>
+        <div class="card">
+          <h3><i data-lucide="book-open"></i> Previous entries</h3>
+          <ul class="entries" id="moodList"></ul>
+        </div>
+      </section>
+
+      <!-- Wellness -->
+      <section class="page" id="p-wellness" aria-labelledby="welH">
+        <h2 id="welH">Daily wellness</h2>
+        <p class="sub" id="welDate"></p>
+        <div class="dash">
+          <div class="card quote-card span2"><i data-lucide="quote"></i>
+            <p id="welQuote"></p><small id="welAuthor"></small>
+          </div>
+          <div class="card">
+            <h3><i data-lucide="lightbulb"></i> Today's tip</h3>
+            <p id="welTip"></p>
+          </div>
+          <div class="card">
+            <h3><i data-lucide="heart"></i> Self-care today</h3>
+            <ul class="checks" id="welCare"></ul>
+          </div>
+          <div class="card">
+            <h3><i data-lucide="leaf"></i> Mindfulness exercise</h3>
+            <div class="seg small" id="mfTabs"></div>
+            <div id="mfBody"></div>
+          </div>
+          <div class="card">
+            <h3><i data-lucide="flower-2"></i> Simple meditation</h3>
+            <p class="sub">Two minutes, eyes open or closed.</p>
+            <div class="med" id="medBox" aria-live="polite">Press start when you're comfortable.</div>
+            <div class="row"><button class="btn sm" id="medStart" type="button"><i data-lucide="play"></i>
+                Start</button><span class="timer" id="medTimer">02:00</span></div>
+          </div>
+          <div class="card span2">
+            <h3><i data-lucide="notebook-pen"></i> Gratitude journal</h3>
+            <form id="grForm" class="gr"><label class="sr" for="grInput">Something you're grateful for</label><input
+                id="grInput" type="text" maxlength="200" placeholder="Today I'm grateful for…"><button class="btn sm"
+                type="submit">Add</button></form>
+            <ul class="entries" id="grList"></ul>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <nav class="tabbar" id="tabBar" aria-label="App navigation (mobile)">
+      <a href="#/app/dashboard" data-page="dashboard"><i data-lucide="layout-dashboard"></i><span>Home</span></a>
+      <a href="#/app/chat" data-page="chat"><i data-lucide="message-circle-heart"></i><span>Chat</span></a>
+      <a href="#/app/breathe" data-page="breathe"><i data-lucide="wind"></i><span>Breathe</span></a>
+      <a href="#/app/mood" data-page="mood"><i data-lucide="smile-plus"></i><span>Mood</span></a>
+      <a href="#/app/wellness" data-page="wellness"><i data-lucide="sprout"></i><span>Daily</span></a>
+    </nav>
+  </div>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script type="module" src="js/app.js"></script>
+</body>
+
+</html>
